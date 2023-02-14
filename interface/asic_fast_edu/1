@@ -1,0 +1,448 @@
+INFO: Initializing prameters for FHE Hardware
+-----Modulus, Barret k and md, Nth Root of Unity and Selected Nth root of unity-----------
+Modulus : 257
+Barret k : 18
+Barret md : 1020
+-----Finding the Nth (N = POLYDEG) root of unity for the above modulus-----------
+Primitive root of unity : [9]
+Selected Nth Root of Unity 9
+--------------------------------------------------------------------------
+#------------------------------------------------------------------
+#INFO: Initial Values
+#------------------------------------------------------------------
+INFO: Value of Modulus         := 257
+INFO: Value of NINV            := 255
+INFO: Value of LOG2(modulus)   := 9
+#------------------------------------------------------------------
+INFO: Connecting to Serial Port of FHE Hardware
+True
+INFO: Reading the Signature Register
+INFO: Signature Read Correctly as 0cc50302
+INFO: Switching UART speed
+INFO: Disconnecting from SLOWER Serial Port of FHE Hardware
+None
+INFO: Connecting to Serial Port of FHE Hardware
+True
+INFO: Connecting to UARTS Serial Port of FHE Hardware
+True
+INFO: Reading the Signature Register
+INFO: Signature Read Correctly as 0cc50302
+INFO: Loading Initial Values to the FHE Hardware
+ << DBG: Modulus : 257
+-----Starting POLYMUL-----------
+ << INFO: Loading Polynomials A & B
+ << Info Time now : 15:22:57.194432
+ << INFO: Done Loading Polynomials A & B
+ << Info Time now : 15:22:57.222429
+ << INFO: Loading twiddle factor T
+ << INFO: Done Loading twiddle factor T
+ << Info Time now : 15:22:57.233739
+ << INFO: Triggered NTT A
+ << INFO: Triggered NTT B
+ << INFO: Triggered MUL A * B
+ << INFO: Triggered CMUL
+ << INFO: Triggered INTT
+ << Info: Reading UARTS : 
+ << Info: UARTS read result : b'43'
+ << Info: Reading Result : 
+ << Info: Total Cycles to complete Polynomial Multiplication after operands are loaded to the memory : 2135
+ << Info: Total Time   to complete Polynomial Multiplication after operands are loaded to the memory : 0 ms
+ << Info Time now : 15:22:57.576866
+ << Info: Verifying Result..............
+ << Info Time now : 15:23:05.767447
+--------------------------------------------------------------------------
+ << Info: POLYNOMIAL MULTIPLICATION PASSED. 
+--------------------------------------------------------------------------
+ << DBG: Expected Value : 0x98
+ << DBG: Read Value : 152
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xfb
+ << DBG: Read Value : 251
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd3
+ << DBG: Read Value : 211
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xb1
+ << DBG: Read Value : 177
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xf9
+ << DBG: Read Value : 249
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x5
+ << DBG: Read Value : 5
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xf2
+ << DBG: Read Value : 242
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd9
+ << DBG: Read Value : 217
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x5
+ << DBG: Read Value : 5
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1b
+ << DBG: Read Value : 27
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x22
+ << DBG: Read Value : 34
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x8e
+ << DBG: Read Value : 142
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1f
+ << DBG: Read Value : 31
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x21
+ << DBG: Read Value : 33
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x88
+ << DBG: Read Value : 136
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xbb
+ << DBG: Read Value : 187
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x20
+ << DBG: Read Value : 32
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xb0
+ << DBG: Read Value : 176
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xe4
+ << DBG: Read Value : 228
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x6e
+ << DBG: Read Value : 110
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x87
+ << DBG: Read Value : 135
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x7
+ << DBG: Read Value : 7
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xae
+ << DBG: Read Value : 174
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x2e
+ << DBG: Read Value : 46
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x39
+ << DBG: Read Value : 57
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x2b
+ << DBG: Read Value : 43
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x4f
+ << DBG: Read Value : 79
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x6e
+ << DBG: Read Value : 110
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x46
+ << DBG: Read Value : 70
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9f
+ << DBG: Read Value : 159
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xf8
+ << DBG: Read Value : 248
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x44
+ << DBG: Read Value : 68
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9e
+ << DBG: Read Value : 158
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x2a
+ << DBG: Read Value : 42
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x46
+ << DBG: Read Value : 70
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1b
+ << DBG: Read Value : 27
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x3e
+ << DBG: Read Value : 62
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x51
+ << DBG: Read Value : 81
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xb9
+ << DBG: Read Value : 185
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x10
+ << DBG: Read Value : 16
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1
+ << DBG: Read Value : 1
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9f
+ << DBG: Read Value : 159
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x88
+ << DBG: Read Value : 136
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x40
+ << DBG: Read Value : 64
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x61
+ << DBG: Read Value : 97
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xe8
+ << DBG: Read Value : 232
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xfc
+ << DBG: Read Value : 252
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xa6
+ << DBG: Read Value : 166
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x3f
+ << DBG: Read Value : 63
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x5b
+ << DBG: Read Value : 91
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x3f
+ << DBG: Read Value : 63
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xcf
+ << DBG: Read Value : 207
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xba
+ << DBG: Read Value : 186
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x19
+ << DBG: Read Value : 25
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1d
+ << DBG: Read Value : 29
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x69
+ << DBG: Read Value : 105
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9c
+ << DBG: Read Value : 156
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x8f
+ << DBG: Read Value : 143
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x4b
+ << DBG: Read Value : 75
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x3d
+ << DBG: Read Value : 61
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x59
+ << DBG: Read Value : 89
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xce
+ << DBG: Read Value : 206
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xfd
+ << DBG: Read Value : 253
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xb9
+ << DBG: Read Value : 185
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9f
+ << DBG: Read Value : 159
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x89
+ << DBG: Read Value : 137
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xc7
+ << DBG: Read Value : 199
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x7f
+ << DBG: Read Value : 127
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x49
+ << DBG: Read Value : 73
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xcb
+ << DBG: Read Value : 203
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xc
+ << DBG: Read Value : 12
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xeb
+ << DBG: Read Value : 235
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x8b
+ << DBG: Read Value : 139
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x8f
+ << DBG: Read Value : 143
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x89
+ << DBG: Read Value : 137
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9e
+ << DBG: Read Value : 158
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x26
+ << DBG: Read Value : 38
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd8
+ << DBG: Read Value : 216
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x76
+ << DBG: Read Value : 118
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x2c
+ << DBG: Read Value : 44
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x63
+ << DBG: Read Value : 99
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x74
+ << DBG: Read Value : 116
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x42
+ << DBG: Read Value : 66
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x74
+ << DBG: Read Value : 116
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd2
+ << DBG: Read Value : 210
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd2
+ << DBG: Read Value : 210
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xa2
+ << DBG: Read Value : 162
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x77
+ << DBG: Read Value : 119
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x92
+ << DBG: Read Value : 146
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x10
+ << DBG: Read Value : 16
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x80
+ << DBG: Read Value : 128
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x20
+ << DBG: Read Value : 32
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x9f
+ << DBG: Read Value : 159
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x69
+ << DBG: Read Value : 105
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xed
+ << DBG: Read Value : 237
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x88
+ << DBG: Read Value : 136
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xa
+ << DBG: Read Value : 10
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xf9
+ << DBG: Read Value : 249
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xac
+ << DBG: Read Value : 172
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x48
+ << DBG: Read Value : 72
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xde
+ << DBG: Read Value : 222
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x95
+ << DBG: Read Value : 149
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd3
+ << DBG: Read Value : 211
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xb7
+ << DBG: Read Value : 183
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xc1
+ << DBG: Read Value : 193
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xc0
+ << DBG: Read Value : 192
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x78
+ << DBG: Read Value : 120
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1f
+ << DBG: Read Value : 31
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x93
+ << DBG: Read Value : 147
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x72
+ << DBG: Read Value : 114
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x54
+ << DBG: Read Value : 84
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x49
+ << DBG: Read Value : 73
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x3e
+ << DBG: Read Value : 62
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1a
+ << DBG: Read Value : 26
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xe3
+ << DBG: Read Value : 227
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x42
+ << DBG: Read Value : 66
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x69
+ << DBG: Read Value : 105
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x82
+ << DBG: Read Value : 130
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x62
+ << DBG: Read Value : 98
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd4
+ << DBG: Read Value : 212
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x21
+ << DBG: Read Value : 33
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x91
+ << DBG: Read Value : 145
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xd0
+ << DBG: Read Value : 208
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x1b
+ << DBG: Read Value : 27
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xcb
+ << DBG: Read Value : 203
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0xfa
+ << DBG: Read Value : 250
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x67
+ << DBG: Read Value : 103
+----DBG------------------------------------------------------------------
+ << DBG: Expected Value : 0x74
+ << DBG: Read Value : 116
+----DBG------------------------------------------------------------------
+--------------------------------------------------------------------------
+ << Info: POLYNOMIAL MULTIPLICATION PASSED. 
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+ << Info Time now : 15:23:05.771415
+INFO: Disconnecting from Serial Port of FHE Hardware
+None
+INFO: Disconnecting from UARTS Serial Port of FHE Hardware
+None

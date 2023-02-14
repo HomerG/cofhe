@@ -1,0 +1,23 @@
+
+  assign base_addr_a     = cfifo_sel ? base_addr_a_cf: fhe_ctl2_reg[7:0];
+  assign base_addr_b     = cfifo_sel ? base_addr_b_cf: fhe_ctl2_reg[15:8];
+  assign base_addr_t     = fhe_ctl2_reg[23:16];
+  assign base_addr_r     = cfifo_sel ? base_addr_r_cf: fhe_ctl2_reg[31:24];
+
+
+//operand_a_addr 7:0     
+//operand_b_addr 15:8
+//result_r_addr  23:16
+//mode           27:24
+//misc           31:28
+
+
+//mode 
+//0000 ntt
+//0001 intt
+//0010 mul
+//0011 add
+//0100 sub
+//0101 constmul
+
+
