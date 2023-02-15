@@ -34,6 +34,7 @@ class Cofhe
         uint32_t n;
         uint32_t polyBytes;
         uint32_t frequency;
+        uint8_t test_val;
         bool dual = false;
 
         uint32_t concatenate(const std::vector<Register> & regs, bool allowDual, size_t idx=0);
@@ -87,6 +88,7 @@ class Cofhe
             size_t i;
             for ( i=0; i<s   ; i++ ) dout[i] = ( din >> e3::cofhe::byte2bit(i) ) & 0xff;
             for (    ; i<size; i++ ) dout[i] = 0;
+            this->test_val = dout;
             return dout;
         }
         // void test_cofhe();
