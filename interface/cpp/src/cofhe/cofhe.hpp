@@ -46,7 +46,7 @@ class Cofhe
         void setUart(const std::map<std::string,DataType> & params);
 
     public:
-        uint8_t test_val;
+        // uint8_t test_val;
         Cofhe(){}
         Cofhe(ComType comtype, const std::map<std::string,DataType> & params);
 
@@ -88,7 +88,7 @@ class Cofhe
             size_t i;
             for ( i=0; i<s   ; i++ ) dout[i] = ( din >> e3::cofhe::byte2bit(i) ) & 0xff;
             for (    ; i<size; i++ ) dout[i] = 0;
-            this->test_val = dout;
+            // this->test_val = dout;
             return dout;
         }
         // void test_cofhe();
