@@ -79,7 +79,7 @@ class Cofhe
     	void test_cofhe(){
     		std::cout << "Hello from Cofhee!" << std::endl;
     	}
-        void test_cofhe();
+        // void test_cofhe();
 };
 
 } // cofhe
