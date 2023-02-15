@@ -34,7 +34,6 @@ class Cofhe
         uint32_t n;
         uint32_t polyBytes;
         uint32_t frequency;
-        uint8_t test_val;
         bool dual = false;
 
         uint32_t concatenate(const std::vector<Register> & regs, bool allowDual, size_t idx=0);
@@ -47,6 +46,7 @@ class Cofhe
         void setUart(const std::map<std::string,DataType> & params);
 
     public:
+        uint8_t test_val;
         Cofhe(){}
         Cofhe(ComType comtype, const std::map<std::string,DataType> & params);
 
