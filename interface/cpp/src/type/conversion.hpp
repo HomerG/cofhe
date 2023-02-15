@@ -39,7 +39,7 @@ uint8_t * header_uint64touint8(uint64_t din)
     auto size = s << 1;
     auto dout = (uint8_t *) malloc(size);
     size_t i;
-    for ( i=0; i<s   ; i++ ) dout[i] = ( din >> byte2bit(i) ) & 0xff;
+    for ( i=0; i<s   ; i++ ) dout[i] = ( din >> e3::cofhe::byte2bit(i) ) & 0xff;
     for (    ; i<size; i++ ) dout[i] = 0;
     return dout;
 }
