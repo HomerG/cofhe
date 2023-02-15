@@ -79,6 +79,16 @@ class Cofhe
     	void test_cofhe(){
     		std::cout << "Hello from Cofhee!" << std::endl;
     	}
+        uint8_t * cheader_uint64touint8(uint64_t din)
+        {
+            auto s    = sizeof(uint64_t);
+            auto size = s << 1;
+            auto dout = (uint8_t *) malloc(size);
+            size_t i;
+            for ( i=0; i<s   ; i++ ) dout[i] = ( din >> e3::cofhe::byte2bit(i) ) & 0xff;
+            for (    ; i<size; i++ ) dout[i] = 0;
+            return dout;
+        }
         // void test_cofhe();
 };
 
