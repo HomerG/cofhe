@@ -6,6 +6,7 @@
 #include <vector>
 
 #include "number.h"
+#include "integer.hpp"
 
 namespace ringint
 {

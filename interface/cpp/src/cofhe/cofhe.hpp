@@ -46,7 +46,7 @@ class Cofhe
         void setUart(const std::map<std::string,DataType> & params);
 
     public:
-        // uint8_t test_val;
+        uint8_t test_val;
         Cofhe(){}
         Cofhe(ComType comtype, const std::map<std::string,DataType> & params);
 

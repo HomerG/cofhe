@@ -29,7 +29,7 @@ endif
 
 # compiler
 CC=g++
-FLAGS=-O2 -std=c++17
+FLAGS=-O2 -std=c++17 -c
 DEBUG=0
 ifeq ($(DEBUG),1)
 FLAGS+=-g
@@ -62,7 +62,8 @@ TARGET=test_ntt3
 all: createDirectories compile run
 
 %: %.cpp
-	$(CC) $(INCS) $(FLAGS) -o $(DIR_BIN)/$(TARGET)$(EXE) $< $(CPPS) $(LIBS) $(DEFS)
+# 	$(CC) $(INCS) $(FLAGS) -o $(DIR_BIN)/$(TARGET)$(EXE) $< $(CPPS) $(LIBS) $(DEFS)
+	$(CC) $(INCS) $(FLAGS) $(DIR_BIN)/$(TARGET)$(EXE) $< $(CPPS) $(LIBS) $(DEFS)
 
 clean:
 	rm -f $(DIR_BIN)/*$(EXE)

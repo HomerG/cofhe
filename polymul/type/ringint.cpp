@@ -1,4 +1,5 @@
 #include "ringint.hpp"
+#include "integer.hpp"
 
 using namespace ringint;
 using namespace std;
