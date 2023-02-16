@@ -12,7 +12,8 @@
 // including MPIR
 //#include "mpir.h"
 //#include "mpirxx.h"
-#include "gmp-impl.h"
+//#include "gmp-impl.h"
+#include <gmpxx.h>
 // start header amalgama
 
 // *** begin cpp_share/util/e3util.h
