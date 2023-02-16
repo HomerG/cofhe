@@ -10,9 +10,9 @@
 // TFHE=0 SEAL=0 FHEW=0 HELI=0 MPIR=1 CUDD=0 PALI=0
 
 // including MPIR
-#include "mpir.h"
-#include "mpirxx.h"
-#include "gmp-impl.h"
+//#include "mpir.h"
+//#include "mpirxx.h"
+//#include "gmp-impl.h"
 // start header amalgama
 
 // *** begin cpp_share/util/e3util.h
