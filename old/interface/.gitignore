@@ -1,0 +1,6 @@
+__pycache__
+*.exe
+*.log
+*.o
+*.out
+*.tmp

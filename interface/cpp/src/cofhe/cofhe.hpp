@@ -46,7 +46,6 @@ class Cofhe
         void setUart(const std::map<std::string,DataType> & params);
 
     public:
-        uint8_t test_val;
         Cofhe(){}
         Cofhe(ComType comtype, const std::map<std::string,DataType> & params);
 
@@ -77,21 +76,6 @@ class Cofhe
         void setTwiddle(const uint8_t * twiddle, const Register & reg);
         bool validate();
         void writeCommand(const uint8_t * data, uint32_t address, uint32_t size);
-    	void test_cofhe(){
-    		std::cout << "Hello from Cofhee!" << std::endl;
-    	}
-        uint8_t * cheader_uint64touint8(uint64_t din)
-        {
-            auto s    = sizeof(uint64_t);
-            auto size = s << 1;
-            auto dout = (uint8_t *) malloc(size);
-            size_t i;
-            for ( i=0; i<s   ; i++ ) dout[i] = ( din >> e3::cofhe::byte2bit(i) ) & 0xff;
-            for (    ; i<size; i++ ) dout[i] = 0;
-            // this->test_val = dout;
-            return dout;
-        }
-        // void test_cofhe();
 };
 
 } // cofhe

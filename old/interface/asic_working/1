@@ -1,0 +1,26 @@
+INFO: Initializing prameters for FHE Hardware
+-----Modulus, Barret k and md, Nth Root of Unity and Selected Nth root of unity-----------
+Modulus : 40961
+Barret k : 32
+Barret md : 104855
+-----Finding the Nth (N = POLYDEG) root of unity for the above modulus-----------
+Primitive root of unity : [243]
+Selected Nth Root of Unity 243
+--------------------------------------------------------------------------
+#------------------------------------------------------------------
+#INFO: Initial Values
+#------------------------------------------------------------------
+INFO: Value of Modulus         := 40961
+INFO: Value of NINV            := 40956
+INFO: Value of LOG2(modulus)   := 16
+#------------------------------------------------------------------
+INFO: Connecting to Serial Port of FHE Hardware
+True
+INFO: Reading the Signature Register
+INFO: Signature Read Correctly as 0cc50302
+INFO: Loading Initial Values to the FHE Hardware
+ << DBG: Modulus : 40961
+ << Info Time now : 01:37:21.001791
+-----Starting POLYMUL-----------
+ << INFO: Loading Polynomials A & B
+ << Info Time now : 01:37:21.001878

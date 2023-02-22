@@ -1,0 +1,5 @@
+cofhe_file.c -> Testbench which takes file input(uart_in.txt for fhe_ntt and uart_in_poly_mul.txt for fhe_poly_mul). It executes fhe_ntt and/or fhe_poly_mul.
+
+cofhe_tasks.c -> It has three task. Initialization of COFHE and Verify COFHE by comparing the signature.
+
+uart_acccess_c -> It has all the low-level UART commands.

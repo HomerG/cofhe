@@ -1,5 +1,4 @@
 #include "ringint.hpp"
-#include "integer.hpp"
 
 using namespace ringint;
 using namespace std;
@@ -24,8 +23,7 @@ Ringint & Ringint::operate(const Ringint & a, const Operator & op)
         case LCM : x.lcm(a.x);                 break;
         case MOD : x %= a.x;                   break;
         case MUL : x *= a.x;                   break;
-//        case POW : x.powm(a.x, mod);           break;
-        case POW : x.pow(a.x, mod);           break;
+        case POW : x.powm(a.x, mod);           break;
         case SUB : x = x + ( x < a.x ? mod : Number(0) ) - a.x; break;
         default  : throw "Ringint operation not supported";
     }
@@ -147,7 +145,7 @@ Ringint Ringint::inv(const Ringint & a)
     return r;
 }
 
-//Ringint Ringint::random() { return Number::random(mod); }
+Ringint Ringint::random() { return Number::random(mod); }
 
 // public functions
 Number Ringint::getModulus() { return mod; }
