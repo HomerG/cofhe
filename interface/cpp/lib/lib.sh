@@ -10,7 +10,7 @@ templates=(polynomial)
 cpps=(cofhe conversion io integer math ringint \
     spi support termios termios2 termite uart)
 
-lib=cofhe
+lib=libcofhe
 
 # compiler, archiver, and flags
 cc=g++
