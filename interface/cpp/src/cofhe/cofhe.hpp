@@ -76,6 +76,7 @@ class Cofhe
         void setTwiddle(const uint8_t * twiddle, const Register & reg);
         bool validate();
         void writeCommand(const uint8_t * data, uint32_t address, uint32_t size);
+        void test_cofhe();
 };
 
 } // cofhe
