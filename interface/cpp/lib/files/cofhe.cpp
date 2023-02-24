@@ -411,6 +411,10 @@ void Cofhe::writeCommand(const uint8_t * data, uint32_t address, uint32_t size)
     }
 }
 
+void Cofhe::test_cofhe(){
+         std::cout << "Hello from Cofhee!" << std::endl;
+     }
+
 } // cofhe
 
 } // e3
